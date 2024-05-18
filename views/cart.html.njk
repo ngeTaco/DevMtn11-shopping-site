@@ -1,0 +1,33 @@
+{% extends 'base.html.njk' %}
+
+{% block body %}
+<table class="table table-striped mt-3">
+  <thead>
+    <tr>
+      <th>Animal Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bear</td>
+      <td>2</td>
+      <td>$15.00</td>
+      <td>$30.00</td>
+    </tr>
+    <tr>
+      <td>Rabbit</td>
+      <td>1</td>
+      <td>$20.00</td>
+      <td>$20.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Total: $50.00</h3>
+
+<a href="/checkout" class="btn btn-large btn-primary">Check Out</a>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+[
+  { "username": "crobin", "password": "pooh", "name": "Christopher Robin" },
+  { "username": "jbrown", "password": "paddington", "name": "Judy Brown" },
+  { "username": "bpotter", "password": "peterrabbit", "name": "Beatrix Potter" },
+  { "username": "jhenson", "password": "muppets", "name": "Jim Henson" }
+]

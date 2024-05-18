@@ -1,0 +1,26 @@
+{% extends 'base.html.njk' %}
+
+{% block body %}
+<h2>Stuffed Animals</h2>
+
+<div class="row">
+  {% for animal in animals %}
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 summary mt-3">
+    <div class="card text-center bg-light">
+
+      <a href="/animal-details/bear">
+        <img class="card-img-top img-circle" src="{{ animal.image_url }}" />
+      </a>
+
+      <div class="card-body">
+        <h5 class="card-title">Bear</h5>
+        <div class="price card-text">$15.00</div>
+        <a class="btn btn-primary" href="/animal-details/bear">Details</a>
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

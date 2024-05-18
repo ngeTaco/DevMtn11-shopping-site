@@ -1,0 +1,58 @@
+{
+  "bear": {
+    "animal_id": "bear",
+    "name": "Bear",
+    "price": 15,
+    "color": "brown",
+    "size": "12 inches",
+    "image_url": "/img/bear.jpg"
+  },
+  "elephant": {
+    "animal_id": "elephant",
+    "name": "Elephant",
+    "price": 16,
+    "color": "light brown",
+    "size": "10 inches",
+    "image_url": "/img/elephant.jpeg"
+  },
+  "monkey": {
+    "animal_id": "monkey",
+    "name": "Monkey",
+    "price": 20,
+    "color": "brown",
+    "size": "14 inches",
+    "image_url": "/img/monkey.jpeg"
+  },
+  "penguin": {
+    "animal_id": "penguin",
+    "name": "Penguin",
+    "price": 14,
+    "color": "gray/white",
+    "size": "9 inches",
+    "image_url": "/img/penguin.jpeg"
+  },
+  "platypus": {
+    "animal_id": "platypus",
+    "name": "Platypus",
+    "price": 18,
+    "color": "gray",
+    "size": "8 inches",
+    "image_url": "/img/platypus.jpeg"
+  },
+  "rabbit": {
+    "animal_id": "rabbit",
+    "name": "Rabbit",
+    "price": 20,
+    "color": "white",
+    "size": "16 inches",
+    "image_url": "/img/rabbit.jpg"
+  },
+  "raccoon": {
+    "animal_id": "raccoon",
+    "name": "Raccoon",
+    "price": 15,
+    "color": "black/gray",
+    "size": "10 inches",
+    "image_url": "/img/raccoon.jpeg"
+  }
+}
