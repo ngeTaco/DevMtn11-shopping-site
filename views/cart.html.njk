@@ -11,22 +11,18 @@
     </tr>
   </thead>
   <tbody>
+    {% for animal in animals %}
     <tr>
-      <td>Bear</td>
-      <td>2</td>
-      <td>$15.00</td>
-      <td>$30.00</td>
+      <td>{{ animal.name }}</td>
+      <td>{{ animal.quantity }}</td>
+      <td>${{ animal.price }}</td>
+      <td>${{ animal.subTotal.toFixed(2) }}</td>
     </tr>
-    <tr>
-      <td>Rabbit</td>
-      <td>1</td>
-      <td>$20.00</td>
-      <td>$20.00</td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>
 
-<h3>Total: $50.00</h3>
+<h3>Total: ${{ orderTotal.toFixed(2) }}</h3>
 
 <a href="/checkout" class="btn btn-large btn-primary">Check Out</a>
 
