@@ -46,9 +46,9 @@ app.get('/add-to-cart/:animalId', (req, res) => {
 // - check if the desired animal id is in the cart, and if not, put it in
 // - increment the count for that animal id by 1
   if (!(animalId in currentSession.cart)) {
-    currentSession[animalId] = 0;
+    currentSession.cart[animalId] = 0;
   }
-  currentSession[animalId] += 1;
+  currentSession.cart[animalId] += 1;
 // - redirect the user to the cart page
   res.redirect('/cart');
 });
@@ -61,6 +61,7 @@ app.get('/cart', (req, res) => {
 //   - create an array to hold the animals in the cart, and a variable to
 //     hold the total cost of the order
   const cart = req.session.cart;
+  console.log(cart);
   const animals = [];
   let orderTotal = 0;
 //   - loop over the cart object, and for each animal id:
